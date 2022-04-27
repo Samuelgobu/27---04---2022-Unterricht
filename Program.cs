@@ -52,7 +52,7 @@ namespace _27___04___2022_Unterricht
 
             }
 
-            return binärzahl
+            return binärzahl;
         }
     }
 }
