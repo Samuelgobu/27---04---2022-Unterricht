@@ -10,15 +10,75 @@ namespace _27___04___2022_Unterricht
     {
         static void Main(string[] args)
         {
+            //Menü:
+            string nochmal = "j";
+            
+            do
+            {
+                string auswahl;
+                Console.WriteLine("Zahlensysteme");
+                Console.WriteLine("1: Umwandlung von dezimal zu binär");
+                Console.WriteLine("2: Umwandlung von binär zu dezimal");
+                Console.WriteLine("3: Umwandlung von dezimal zu hexadezimal");
+                Console.WriteLine("4: Umwandlung von hexadezimal zu dezimal ");
+                Console.Write("Auswahl: ");
+                auswahl = Console.ReadLine();
+
+                switch (auswahl)
+                {
+                    case "1":
+                        Console.Write("Dezimal eingeben:");
+                        int dezimaleingabe = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("[" + dezimaleingabe + "]_10 = [" + DezimalZuBinär(dezimaleingabe));
+                        break;
+                        //--------------------
+                    case "2":
+                        Console.Write("Binärzahl eingeben:");
+                        string binäreingabe = Console.ReadLine();
+                        Console.WriteLine("[" + binäreingabe + "]_2 = [" + BinärZuDezimal(binäreingabe));
+
+                        break;
+                        //--------------------
+                    case "3":
+                        
+
+
+
+                        break;
+                       //--------------------
+                    case "4":
+                        
+
+
+
+                        break;
+                       //--------------------
+                }
+
+
+
+
+
+            } while (nochmal == "j" || nochmal == "J");
+
+
+
+
+
+
+
+
+
             //Console.WriteLine(Summe(3, 5));
-            Console.WriteLine("Binärzahl eingeben:");
-            string binäreingabe = Console.ReadLine();
 
-            Console.WriteLine(BinärZuDezimal(binäreingabe));
 
-            Console.WriteLine("Dezimalzahl eingeben:");
-            int dezimaleingabe = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(DezimalZuBinär(dezimaleingabe));
+            //Console.WriteLine("Binärzahl eingeben:");
+            //string binäreingabe = Console.ReadLine();
+            //Console.WriteLine(BinärZuDezimal(binäreingabe));
+
+            //Console.WriteLine("Dezimalzahl eingeben:");
+            //int dezimaleingabe = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine(DezimalZuBinär(dezimaleingabe));
 
 
         }
@@ -53,6 +113,34 @@ namespace _27___04___2022_Unterricht
             }
 
             return binärzahl;
+        }
+        static int BuchstabeZuZahl(string buchstabe)
+        {
+            int zahl;
+            switch (buchstabe)
+            {
+                case "A":
+                    zahl = 10;
+                    break;
+                case "B":
+                    zahl = 11;
+                    break;
+                case "C":
+                    zahl = 12;
+                    break;
+                case "D":
+                    zahl = 13;
+                    break;
+                case "E":
+                    zahl = 14;
+                    break;
+                case "F":
+                    zahl = 15;
+                    break;
+            }
+
+
+            return zahl;
         }
     }
 }
