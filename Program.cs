@@ -145,8 +145,8 @@ namespace _27___04___2022_Unterricht
                         break;
 
                     default:
-                        Console.WriteLine("unültige Eingabe");
-
+                        
+                        zahl = Convert.ToInt32(buchstabe);
                         break;
                 
                 }
