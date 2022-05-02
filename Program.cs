@@ -117,30 +117,62 @@ namespace _27___04___2022_Unterricht
         static int BuchstabeZuZahl(string buchstabe)
         {
             int zahl;
-            switch (buchstabe)
+            if (Convert.ToInt32(buchstabe) < 10)
             {
-                case "A":
-                    zahl = 10;
-                    break;
-                case "B":
-                    zahl = 11;
-                    break;
-                case "C":
-                    zahl = 12;
-                    break;
-                case "D":
-                    zahl = 13;
-                    break;
-                case "E":
-                    zahl = 14;
-                    break;
-                case "F":
-                    zahl = 15;
-                    break;
+                zahl = Convert.ToInt32(buchstabe);
             }
+            else
+            {
+                switch (buchstabe.ToUpper())
+                {
+                    case "A":
+                        zahl = 10;
+                        break;
+                    case "B":
+                        zahl = 11;
+                        break;
+                    case "C":
+                        zahl = 12;
+                        break;
+                    case "D":
+                        zahl = 13;
+                        break;
+                    case "E":
+                        zahl = 14;
+                        break;
+                    case "F":
+                        zahl = 15;
+                        break;
 
+                    default:
+                        Console.WriteLine("unültige Eingabe");
 
-            return zahl;
+                        break;
+                
+                }
+
+                return zahl;
+
+            }
+        }
+
+        static string ZahlZuBuchstabe(int zahl)
+            {
+                string buchstabe;
+                if ()
+            }
+        static int HexadezimalZuDezimal(string hexadezimal)
+        {
+            int dezimalzahl = 0;
+            for (int i = 0; i < hexadezimalzahl.Length; i++)
+            {
+                int l = hexadezimalzahl.Length;
+                int stelle = BuchstabeZuZahl(hexadezimalzahl[i].ToString());
+                if (stelle == -1)
+                {
+                    return 
+                }
+            }
         }
     }
 }
